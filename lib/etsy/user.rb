@@ -37,7 +37,8 @@ module Etsy
     # Retrieve the currently authenticated user.
     #
     def self.myself(token, secret, options = {})
-      find('__SELF__', {:access_token => token, :access_secret => secret}.merge(options))
+      # find('__SELF__', {:access_token => token, :access_secret => secret}.merge(options))
+      find('me', {:access_token => token, :access_secret => secret}.merge(options))
     end
 
     # The shop associated with this user.
