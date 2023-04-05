@@ -55,8 +55,8 @@ module Etsy
     end
 
     def base_path # :nodoc:
-      # "/v2"
-      "/v3/application"
+      "/v2"
+      # "/v3/application"
     end
 
     # Perform a GET request against the API endpoint and return the raw
